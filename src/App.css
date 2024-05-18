@@ -1,0 +1,80 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300'); */
+.App {
+  background-color: #11111B;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Do Hyeon', sans-serif;
+}
+.start
+{
+  text-decoration: none;
+  color: white;
+  background-color: #F38BA8;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 9999px;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 13rem;
+}
+.navbar
+{
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+  margin: 0;
+  color: white;
+  font-size: 23px;
+  padding: 2rem;
+  /* font-family: 'Pixelify Sans', sans-serif; */
+}
+
+.navbar a
+{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding-left: 3rem;
+  font-weight: bold;
+}
+.textHolder
+{
+  color: white;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 30px;
+  margin-left: 8rem;
+}
+.textHolder p
+{
+  width: 35rem;
+  color: #B3B3B3;
+}
+.projectContainer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+  height: 80vh;
+}
+.square
+{
+  width: 23rem;
+  height: 30rem;
+  background-color: #B4BEFE;
+  border-radius: 44px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.profile
+{
+  margin: -60px;
+}
+.profile img
+{
+  border-radius: 44px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #B4BEFE;
+}
