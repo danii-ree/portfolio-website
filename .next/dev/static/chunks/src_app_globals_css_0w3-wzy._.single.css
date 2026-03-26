@@ -1,0 +1,94 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+:root {
+  --bg-dark: #08080f;
+  --bg-card: #0d0d1f;
+  --bg-card2: #11112a;
+  --neon-pink: #ff2d78;
+  --neon-cyan: #00fff1;
+  --neon-purple: #bf5fff;
+  --neon-yellow: #ffe600;
+  --neon-orange: #ff6b35;
+  --text-primary: #eaeaf5;
+  --text-muted: #7a7a9d;
+  --font-heading: "Orbitron", monospace;
+  --font-mono: "Share Tech Mono", monospace;
+  --font-body: "Exo 2", sans-serif;
+  --glow-pink: 0 0 10px #ff2d78, 0 0 30px #ff2d78aa, 0 0 60px #ff2d7855;
+  --glow-cyan: 0 0 10px #00fff1, 0 0 30px #00fff1aa, 0 0 60px #00fff155;
+  --glow-purple: 0 0 10px #bf5fff, 0 0 30px #bf5fffaa, 0 0 60px #bf5fff55;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--neon-pink), var(--neon-purple));
+  border-radius: 3px;
+}
+
+::selection {
+  background: var(--neon-purple);
+  color: #fff;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.neon-text-pink {
+  color: var(--neon-pink);
+  text-shadow: var(--glow-pink);
+}
+
+.neon-text-cyan {
+  color: var(--neon-cyan);
+  text-shadow: var(--glow-cyan);
+}
+
+.neon-text-purple {
+  color: var(--neon-purple);
+  text-shadow: var(--glow-purple);
+}
+
+body:before {
+  content: "";
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(0deg, #0000, #0000 2px, #00000014 2px 4px);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/*# sourceMappingURL=src_app_globals_css_0w3-wzy._.single.css.map*/

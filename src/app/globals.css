@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Exo+2:wght@300;400;600;700&display=swap');
+
+/* ===== 80s NEON PALETTE & TOKENS ===== */
+:root {
+  --bg-dark: #08080F;
+  --bg-card: #0D0D1F;
+  --bg-card2: #11112A;
+  --neon-pink: #FF2D78;
+  --neon-cyan: #00FFF1;
+  --neon-purple: #BF5FFF;
+  --neon-yellow: #FFE600;
+  --neon-orange: #FF6B35;
+  --text-primary: #EAEAF5;
+  --text-muted: #7A7A9D;
+  --font-heading: 'Orbitron', monospace;
+  --font-mono: 'Share Tech Mono', monospace;
+  --font-body: 'Exo 2', sans-serif;
+  --glow-pink: 0 0 10px #FF2D78, 0 0 30px #FF2D78aa, 0 0 60px #FF2D7855;
+  --glow-cyan: 0 0 10px #00FFF1, 0 0 30px #00FFF1aa, 0 0 60px #00FFF155;
+  --glow-purple: 0 0 10px #BF5FFF, 0 0 30px #BF5FFFaa, 0 0 60px #BF5FFF55;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--neon-pink), var(--neon-purple));
+  border-radius: 3px;
+}
+
+/* Selection */
+::selection { background: var(--neon-purple); color: #fff; }
+
+/* Section spacing */
+section { padding: 100px 0; }
+
+/* Utility */
+.neon-text-pink {
+  color: var(--neon-pink);
+  text-shadow: var(--glow-pink);
+}
+.neon-text-cyan {
+  color: var(--neon-cyan);
+  text-shadow: var(--glow-cyan);
+}
+.neon-text-purple {
+  color: var(--neon-purple);
+  text-shadow: var(--glow-purple);
+}
+
+/* CRT Scanlines Overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.08) 2px,
+    rgba(0,0,0,0.08) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Global container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}

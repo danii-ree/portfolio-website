@@ -1,0 +1,148 @@
+/* [project]/src/components/Footer.css [app-client] (css) */
+.footer {
+  background: var(--bg-card2);
+  border-top: 1px solid #ff2d7826;
+  padding: 5rem 0 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__scanlines {
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, #0000, #0000 3px, #ff2d7804 3px 6px);
+  position: absolute;
+  inset: 0;
+}
+
+.footer__content {
+  z-index: 1;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+  position: relative;
+}
+
+.footer__logo {
+  font-family: var(--font-heading);
+  letter-spacing: 4px;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.footer__logo .logo-bracket {
+  color: var(--neon-pink);
+  text-shadow: var(--glow-pink);
+}
+
+.footer__logo .logo-name {
+  color: var(--neon-cyan);
+  text-shadow: var(--glow-cyan);
+  margin: 0 6px;
+}
+
+.footer__tagline p {
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  font-size: .85rem;
+}
+
+.footer__cta {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.footer__cta-label {
+  font-family: var(--font-mono);
+  letter-spacing: 3px;
+  color: var(--neon-pink);
+  text-shadow: var(--glow-pink);
+  font-size: .75rem;
+}
+
+.footer__github-btn {
+  font-family: var(--font-heading);
+  letter-spacing: 2.5px;
+  border: 2px solid var(--neon-cyan);
+  color: var(--neon-cyan);
+  text-shadow: var(--glow-cyan);
+  box-shadow: var(--glow-cyan);
+  border-radius: 6px;
+  align-items: center;
+  gap: .6rem;
+  padding: .8rem 2rem;
+  font-size: .75rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+}
+
+.footer__github-btn:hover {
+  background: var(--neon-cyan);
+  color: #000;
+  text-shadow: none;
+  box-shadow: 0 0 20px var(--neon-cyan);
+}
+
+.footer__links {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.footer__link {
+  font-family: var(--font-heading);
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  font-size: .68rem;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.footer__link:hover {
+  color: var(--neon-cyan);
+  text-shadow: var(--glow-cyan);
+}
+
+.footer__bottom {
+  border-top: 1px solid #ffffff0d;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+}
+
+.footer__copy {
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  font-size: .72rem;
+}
+
+.footer__status {
+  font-family: var(--font-mono);
+  letter-spacing: 2px;
+  color: #00ff7f;
+  align-items: center;
+  gap: .5rem;
+  font-size: .7rem;
+  display: flex;
+}
+
+@media (max-width: 640px) {
+  .footer__bottom {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=src_components_Footer_css_0w3-wzy._.single.css.map*/

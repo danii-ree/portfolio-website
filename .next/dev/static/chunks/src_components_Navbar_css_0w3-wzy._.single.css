@@ -1,0 +1,147 @@
+/* [project]/src/components/Navbar.css [app-client] (css) */
+.navbar {
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  transition: all .3s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar--scrolled {
+  backdrop-filter: blur(16px);
+  background: #08080feb;
+  border-bottom: 1px solid #ff2d7840;
+  box-shadow: 0 4px 30px #00000080, 0 1px #ff2d7826;
+}
+
+.navbar__logo {
+  font-family: var(--font-heading);
+  letter-spacing: 3px;
+  color: var(--text-primary);
+  cursor: default;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.logo-bracket {
+  color: var(--neon-pink);
+  text-shadow: var(--glow-pink);
+}
+
+.logo-name {
+  color: var(--neon-cyan);
+  text-shadow: var(--glow-cyan);
+  margin: 0 4px;
+}
+
+.navbar__links {
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  display: flex;
+}
+
+.navbar__links li a, .navbar__links li span {
+  font-family: var(--font-heading);
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding-bottom: 4px;
+  font-size: .72rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .3s;
+  position: relative;
+}
+
+.navbar__links li a:after {
+  content: "";
+  background: linear-gradient(90deg, var(--neon-pink), var(--neon-cyan));
+  width: 0;
+  height: 2px;
+  box-shadow: var(--glow-pink);
+  border-radius: 2px;
+  transition: width .3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar__links li a:hover, .navbar__links li a.active {
+  color: var(--neon-cyan);
+  text-shadow: var(--glow-cyan);
+}
+
+.navbar__links li a:hover:after, .navbar__links li a.active:after {
+  width: 100%;
+}
+
+.navbar__burger {
+  cursor: pointer;
+  background: none;
+  border: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+  display: none;
+}
+
+.navbar__burger span {
+  background: var(--neon-cyan);
+  border-radius: 2px;
+  width: 24px;
+  height: 2px;
+  transition: all .3s;
+  display: block;
+}
+
+.navbar__burger.open span:first-child {
+  transform: rotate(45deg)translate(5px, 5px);
+}
+
+.navbar__burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__burger.open span:nth-child(3) {
+  transform: rotate(-45deg)translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar__burger {
+    display: flex;
+  }
+
+  .navbar__links {
+    background: #08080ffa;
+    border-left: 1px solid #ff2d7833;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 70vw;
+    height: 100vh;
+    transition: right .4s;
+    position: fixed;
+    top: 0;
+    right: -100%;
+  }
+
+  .navbar__links--open {
+    right: 0;
+  }
+
+  .navbar__links li a {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_Navbar_css_0w3-wzy._.single.css.map*/
