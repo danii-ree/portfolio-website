@@ -285,6 +285,41 @@ var Hero = function Hero() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         initial: {
                             opacity: 0,
+                            scale: 0.85
+                        },
+                        animate: {
+                            opacity: 1,
+                            scale: 1
+                        },
+                        transition: {
+                            duration: 0.9,
+                            delay: 0.3,
+                            ease: 'easeOut'
+                        },
+                        className: "hero__card-wrap",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "hero__avatar",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                src: "/Images/profile.jpg",
+                                alt: "Daniel"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Hero.jsx",
+                                lineNumber: 66,
+                                columnNumber: 25
+                            }, _this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Hero.jsx",
+                            lineNumber: 65,
+                            columnNumber: 21
+                        }, _this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Hero.jsx",
+                        lineNumber: 59,
+                        columnNumber: 17
+                    }, _this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
                             y: 40
                         },
                         animate: {
@@ -302,7 +337,7 @@ var Hero = function Hero() {
                                 children: "// Hello, World!"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 65,
+                                lineNumber: 76,
                                 columnNumber: 21
                             }, _this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -313,12 +348,12 @@ var Hero = function Hero() {
                                     children: "DANIEL"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Hero.jsx",
-                                    lineNumber: 67,
+                                    lineNumber: 78,
                                     columnNumber: 25
                                 }, _this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 66,
+                                lineNumber: 77,
                                 columnNumber: 21
                             }, _this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -339,12 +374,12 @@ var Hero = function Hero() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Hero.jsx",
-                                    lineNumber: 70,
+                                    lineNumber: 81,
                                     columnNumber: 25
                                 }, _this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 69,
+                                lineNumber: 80,
                                 columnNumber: 21
                             }, _this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -352,7 +387,7 @@ var Hero = function Hero() {
                                 children: "19-year-old software developer, creating projects to make life easier."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 86,
+                                lineNumber: 97,
                                 columnNumber: 21
                             }, _this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -364,7 +399,7 @@ var Hero = function Hero() {
                                         children: "VIEW PROJECTS"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 90,
+                                        lineNumber: 101,
                                         columnNumber: 25
                                     }, _this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -375,188 +410,19 @@ var Hero = function Hero() {
                                         children: "GITHUB ↗"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 91,
+                                        lineNumber: 102,
                                         columnNumber: 25
                                     }, _this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 89,
+                                lineNumber: 100,
                                 columnNumber: 21
                             }, _this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Hero.jsx",
-                        lineNumber: 59,
-                        columnNumber: 17
-                    }, _this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        initial: {
-                            opacity: 0,
-                            scale: 0.85
-                        },
-                        animate: {
-                            opacity: 1,
-                            scale: 1
-                        },
-                        transition: {
-                            duration: 0.9,
-                            delay: 0.3,
-                            ease: 'easeOut'
-                        },
-                        className: "hero__card-wrap",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "hero__card",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "hero__card-inner",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "hero__avatar",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                            src: "/Images/profile.jpg",
-                                            alt: "Daniel",
-                                            onError: function onError(e) {
-                                                e.target.style.display = 'none';
-                                            }
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Hero.jsx",
-                                            lineNumber: 104,
-                                            columnNumber: 33
-                                        }, _this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 103,
-                                        columnNumber: 29
-                                    }, _this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "hero__card-badge",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "pulse-dot"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 107,
-                                                columnNumber: 33
-                                            }, _this),
-                                            " AVAILABLE FOR WORK"
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 106,
-                                        columnNumber: 29
-                                    }, _this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "hero__stats",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "stat",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "stat-num neon-text-pink",
-                                                        children: "7+"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Hero.jsx",
-                                                        lineNumber: 111,
-                                                        columnNumber: 37
-                                                    }, _this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "stat-label",
-                                                        children: "Years Coding"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Hero.jsx",
-                                                        lineNumber: 112,
-                                                        columnNumber: 37
-                                                    }, _this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 110,
-                                                columnNumber: 33
-                                            }, _this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "stat-divider"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 114,
-                                                columnNumber: 33
-                                            }, _this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "stat",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "stat-num neon-text-cyan",
-                                                        children: "30+"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Hero.jsx",
-                                                        lineNumber: 116,
-                                                        columnNumber: 37
-                                                    }, _this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "stat-label",
-                                                        children: "Projects"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Hero.jsx",
-                                                        lineNumber: 117,
-                                                        columnNumber: 37
-                                                    }, _this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 115,
-                                                columnNumber: 33
-                                            }, _this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "stat-divider"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 119,
-                                                columnNumber: 33
-                                            }, _this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "stat",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "stat-num neon-text-purple",
-                                                        children: "∞"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Hero.jsx",
-                                                        lineNumber: 121,
-                                                        columnNumber: 37
-                                                    }, _this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "stat-label",
-                                                        children: "Passion"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Hero.jsx",
-                                                        lineNumber: 122,
-                                                        columnNumber: 37
-                                                    }, _this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/components/Hero.jsx",
-                                                lineNumber: 120,
-                                                columnNumber: 33
-                                            }, _this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/Hero.jsx",
-                                        lineNumber: 109,
-                                        columnNumber: 29
-                                    }, _this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/Hero.jsx",
-                                lineNumber: 102,
-                                columnNumber: 25
-                            }, _this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/Hero.jsx",
-                            lineNumber: 101,
-                            columnNumber: 21
-                        }, _this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Hero.jsx",
-                        lineNumber: 95,
+                        lineNumber: 70,
                         columnNumber: 17
                     }, _this)
                 ]
@@ -572,20 +438,20 @@ var Hero = function Hero() {
                         children: "SCROLL"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Hero.jsx",
-                        lineNumber: 131,
+                        lineNumber: 108,
                         columnNumber: 17
                     }, _this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "hero__scroll-line"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Hero.jsx",
-                        lineNumber: 132,
+                        lineNumber: 109,
                         columnNumber: 17
                     }, _this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Hero.jsx",
-                lineNumber: 130,
+                lineNumber: 107,
                 columnNumber: 13
             }, _this)
         ]
@@ -706,7 +572,7 @@ var About = function About() {
                                     columnNumber: 21
                                 }, _this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    children: "I'm a 19-year-old software developer with a deep passion for programming, computer engineering, and physics. My journey started young — drawn to the raw elegance of low-level C programming where every byte matters and nothing is abstracted away."
+                                    children: "I'm a 19-year-old software developer with a deep passion for programming, computer engineering, and physics. My journey started young — drawn to the raw elegance of low-level C programming where I learned systems and computer architecture."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/About.jsx",
                                     lineNumber: 35,
@@ -714,16 +580,16 @@ var About = function About() {
                                 }, _this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: [
-                                        "From there I fell in love with ",
+                                        "From there I started using ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "highlight-text",
                                             children: "Linux"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/About.jsx",
                                             lineNumber: 41,
-                                            columnNumber: 56
+                                            columnNumber: 52
                                         }, _this),
-                                        " where I learned how operating systems tick, how processes work, and what it truly means to control your machine."
+                                        " where I learned how operating systems work, how processes work, and what it truly means to control your machine."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/About.jsx",
@@ -912,10 +778,10 @@ var milestones = [
     },
     {
         year: '2020',
-        title: 'Falling for Linux',
+        title: 'Introduced to Linux',
         color: 'var(--neon-cyan)',
         glow: '0 0 20px rgba(0,255,241,0.5)',
-        desc: 'Installed Linux for the first time and it changed everything. Learned bash scripting, system administration, file systems, and how the kernel orchestrates the hardware. Linux became my permanent operating system.',
+        desc: 'Installed Debian Linux for the first time and it changed everything. Learned bash scripting, system administration, file systems, and how the kernel orchestrates the hardware. Linux became my permanent operating system.',
         tags: [
             'Linux',
             'Bash',
@@ -1221,8 +1087,8 @@ var projects = [
     {
         id: 1,
         title: 'FilterStudio',
-        subtitle: 'Image Processing Laboratory',
-        desc: 'Advanced studio for building and testing custom image filters with real-time shader previews and visual effects.',
+        subtitle: 'Collaborative Digital Audio Workstation',
+        desc: 'A web-based digital audio workstation that allows multiple users to collaborate on music production in real-time.',
         tags: [
             'TypeScript',
             'WebGL',
@@ -1234,8 +1100,8 @@ var projects = [
     {
         id: 2,
         title: 'Altivity',
-        subtitle: 'Team Productivity Suite',
-        desc: 'Modern productivity platform built for high-performance teams, featuring real-time collaboration and tasks.',
+        subtitle: 'AI Productivity Suite',
+        desc: 'A productivity suite that uses AI to help you stay organized and focused.',
         tags: [
             'TypeScript',
             'Next.js',
@@ -1288,7 +1154,7 @@ var projects = [
         id: 6,
         title: 'Calendar-automation',
         subtitle: 'AI-Powered Scheduler',
-        desc: 'A calendar automation program that automates study schedules using deep seek.',
+        desc: 'A google calendar automation program that automates study schedules using deep seek.',
         tags: [
             'Python',
             'AI',

@@ -14,10 +14,10 @@ const milestones = [
     },
     {
         year: '2020',
-        title: 'Falling for Linux',
+        title: 'Introduced to Linux',
         color: 'var(--neon-cyan)',
         glow: '0 0 20px rgba(0,255,241,0.5)',
-        desc: 'Installed Linux for the first time and it changed everything. Learned bash scripting, system administration, file systems, and how the kernel orchestrates the hardware. Linux became my permanent operating system.',
+        desc: 'Installed Debian Linux for the first time and it changed everything. Learned bash scripting, system administration, file systems, and how the kernel orchestrates the hardware. Linux became my permanent operating system.',
         tags: ['Linux', 'Bash', 'Kernel', 'Open Source'],
     },
     {
@@ -72,7 +72,7 @@ const Journey = () => (
             <div className="timeline">
                 {milestones.map((m, i) => (
                     <div key={m.year} className={`timeline__item ${i % 2 === 0 ? 'left' : 'right'}`}>
-                        <motion.div 
+                        <motion.div
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true, amount: 0.5 }}
@@ -83,7 +83,7 @@ const Journey = () => (
                                 <span>{m.icon}</span>
                             </div>
                         </motion.div>
-                        
+
                         <motion.div
                             initial={{ opacity: 0, x: i % 2 === 0 ? -40 : 40 }}
                             whileInView={{ opacity: 1, x: 0 }}

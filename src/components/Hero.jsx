@@ -57,6 +57,17 @@ const Hero = () => {
             <div className="hero__grid" />
             <div className="hero__content container">
                 <motion.div
+                    initial={{ opacity: 0, scale: 0.85 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.9, delay: 0.3, ease: 'easeOut' }}
+                    className="hero__card-wrap"
+                >
+                    <div className="hero__avatar">
+                        <img src="/Images/profile.jpg" alt="Daniel" />
+                    </div>
+                </motion.div>
+
+                <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -89,40 +100,6 @@ const Hero = () => {
                     <div className="hero__cta">
                         <a href="#projects" className="btn btn--primary">VIEW PROJECTS</a>
                         <a href="https://github.com/danii-ree" target="_blank" rel="noreferrer" className="btn btn--ghost">GITHUB ↗</a>
-                    </div>
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.85 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.9, delay: 0.3, ease: 'easeOut' }}
-                    className="hero__card-wrap"
-                >
-                    <div className="hero__card">
-                        <div className="hero__card-inner">
-                            <div className="hero__avatar">
-                                <img src="/Images/profile.jpg" alt="Daniel" onError={e => { e.target.style.display = 'none'; }} />
-                            </div>
-                            <div className="hero__card-badge">
-                                <span className="pulse-dot" /> AVAILABLE FOR WORK
-                            </div>
-                            <div className="hero__stats">
-                                <div className="stat">
-                                    <span className="stat-num neon-text-pink">7+</span>
-                                    <span className="stat-label">Years Coding</span>
-                                </div>
-                                <div className="stat-divider" />
-                                <div className="stat">
-                                    <span className="stat-num neon-text-cyan">30+</span>
-                                    <span className="stat-label">Projects</span>
-                                </div>
-                                <div className="stat-divider" />
-                                <div className="stat">
-                                    <span className="stat-num neon-text-purple">∞</span>
-                                    <span className="stat-label">Passion</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </motion.div>
             </div>
