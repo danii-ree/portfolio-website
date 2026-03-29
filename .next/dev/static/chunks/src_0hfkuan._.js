@@ -1229,11 +1229,7 @@ var projects = [
             'UI/UX'
         ],
         color: 'var(--neon-pink)',
-        glow: 'rgba(255,45,120,0.3)',
-        status: 'PUBLIC',
-        stats: {
-            stars: 2
-        }
+        glow: 'rgba(255,45,120,0.3)'
     },
     {
         id: 2,
@@ -1246,12 +1242,7 @@ var projects = [
             'Workflow'
         ],
         color: 'var(--neon-cyan)',
-        glow: 'rgba(0,255,241,0.3)',
-        status: 'PUBLIC',
-        stats: {
-            stars: 1,
-            forks: 1
-        }
+        glow: 'rgba(0,255,241,0.3)'
     },
     {
         id: 3,
@@ -1264,11 +1255,7 @@ var projects = [
             'Education'
         ],
         color: 'var(--neon-purple)',
-        glow: 'rgba(191,95,255,0.3)',
-        status: 'PUBLIC',
-        stats: {
-            stars: 1
-        }
+        glow: 'rgba(191,95,255,0.3)'
     },
     {
         id: 4,
@@ -1282,11 +1269,7 @@ var projects = [
             'Filesystem'
         ],
         color: 'var(--neon-yellow)',
-        glow: 'rgba(255,230,0,0.3)',
-        status: 'PUBLIC',
-        stats: {
-            stars: 1
-        }
+        glow: 'rgba(255,230,0,0.3)'
     },
     {
         id: 5,
@@ -1299,11 +1282,7 @@ var projects = [
             'Web Dev'
         ],
         color: 'var(--neon-orange)',
-        glow: 'rgba(255,107,53,0.3)',
-        status: 'PUBLIC',
-        stats: {
-            stars: 1
-        }
+        glow: 'rgba(255,107,53,0.3)'
     },
     {
         id: 6,
@@ -1317,8 +1296,7 @@ var projects = [
             'DeepSeek'
         ],
         color: 'var(--neon-pink)',
-        glow: 'rgba(255,45,120,0.3)',
-        status: 'PUBLIC'
+        glow: 'rgba(255,45,120,0.3)'
     }
 ];
 var staggerContainer = {
@@ -1372,7 +1350,7 @@ var Projects = function Projects() {
                             children: "// 03"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Projects.jsx",
-                            lineNumber: 94,
+                            lineNumber: 83,
                             columnNumber: 17
                         }, _this),
                         " ",
@@ -1380,13 +1358,13 @@ var Projects = function Projects() {
                             children: "PROJECTS"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Projects.jsx",
-                            lineNumber: 94,
+                            lineNumber: 83,
                             columnNumber: 36
                         }, _this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Projects.jsx",
-                    lineNumber: 87,
+                    lineNumber: 76,
                     columnNumber: 13
                 }, _this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
@@ -1414,13 +1392,13 @@ var Projects = function Projects() {
                             children: "Built"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Projects.jsx",
-                            lineNumber: 104,
+                            lineNumber: 93,
                             columnNumber: 29
                         }, _this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Projects.jsx",
-                    lineNumber: 97,
+                    lineNumber: 86,
                     columnNumber: 13
                 }, _this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1453,74 +1431,6 @@ var Projects = function Projects() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "project-card__header",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "project-card__status-bar",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "project-card__status",
-                                                    style: {
-                                                        color: p.color,
-                                                        borderColor: p.color + '50'
-                                                    },
-                                                    children: p.status
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Projects.jsx",
-                                                    lineNumber: 125,
-                                                    columnNumber: 33
-                                                }, _this),
-                                                p.stats && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "project-card__stats",
-                                                    children: [
-                                                        p.stats.stars && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "stat",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "stat-icon",
-                                                                    children: "★"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/Projects.jsx",
-                                                                    lineNumber: 131,
-                                                                    columnNumber: 68
-                                                                }, _this),
-                                                                " ",
-                                                                p.stats.stars
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/components/Projects.jsx",
-                                                            lineNumber: 131,
-                                                            columnNumber: 45
-                                                        }, _this),
-                                                        p.stats.forks && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "stat",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "stat-icon",
-                                                                    children: "⌥"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/components/Projects.jsx",
-                                                                    lineNumber: 134,
-                                                                    columnNumber: 68
-                                                                }, _this),
-                                                                " ",
-                                                                p.stats.forks
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/components/Projects.jsx",
-                                                            lineNumber: 134,
-                                                            columnNumber: 45
-                                                        }, _this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/Projects.jsx",
-                                                    lineNumber: 129,
-                                                    columnNumber: 37
-                                                }, _this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/Projects.jsx",
-                                            lineNumber: 124,
-                                            columnNumber: 29
-                                        }, _this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                             className: "project-card__title",
                                             style: {
@@ -1529,7 +1439,7 @@ var Projects = function Projects() {
                                             children: p.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Projects.jsx",
-                                            lineNumber: 139,
+                                            lineNumber: 113,
                                             columnNumber: 29
                                         }, _this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1537,13 +1447,13 @@ var Projects = function Projects() {
                                             children: p.subtitle
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Projects.jsx",
-                                            lineNumber: 140,
+                                            lineNumber: 114,
                                             columnNumber: 29
                                         }, _this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Projects.jsx",
-                                    lineNumber: 123,
+                                    lineNumber: 112,
                                     columnNumber: 25
                                 }, _this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1551,7 +1461,7 @@ var Projects = function Projects() {
                                     children: p.desc
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Projects.jsx",
-                                    lineNumber: 142,
+                                    lineNumber: 116,
                                     columnNumber: 25
                                 }, _this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1566,13 +1476,13 @@ var Projects = function Projects() {
                                             children: t
                                         }, t, false, {
                                             fileName: "[project]/src/components/Projects.jsx",
-                                            lineNumber: 145,
+                                            lineNumber: 119,
                                             columnNumber: 33
                                         }, _this);
                                     })
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Projects.jsx",
-                                    lineNumber: 143,
+                                    lineNumber: 117,
                                     columnNumber: 25
                                 }, _this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1588,35 +1498,35 @@ var Projects = function Projects() {
                                         children: "VIEW ON GITHUB ↗"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Projects.jsx",
-                                        lineNumber: 149,
+                                        lineNumber: 123,
                                         columnNumber: 29
                                     }, _this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Projects.jsx",
-                                    lineNumber: 148,
+                                    lineNumber: 122,
                                     columnNumber: 25
                                 }, _this)
                             ]
                         }, p.id, true, {
                             fileName: "[project]/src/components/Projects.jsx",
-                            lineNumber: 115,
+                            lineNumber: 104,
                             columnNumber: 21
                         }, _this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/src/components/Projects.jsx",
-                    lineNumber: 107,
+                    lineNumber: 96,
                     columnNumber: 13
                 }, _this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Projects.jsx",
-            lineNumber: 86,
+            lineNumber: 75,
             columnNumber: 9
         }, _this)
     }, void 0, false, {
         fileName: "[project]/src/components/Projects.jsx",
-        lineNumber: 85,
+        lineNumber: 74,
         columnNumber: 5
     }, _this);
 };

@@ -12,8 +12,6 @@ const projects = [
         tags: ['TypeScript', 'WebGL', 'UI/UX'],
         color: 'var(--neon-pink)',
         glow: 'rgba(255,45,120,0.3)',
-        // status: 'PUBLIC',
-        // stats: { stars: 2 }
     },
     {
         id: 2,
@@ -23,8 +21,6 @@ const projects = [
         tags: ['TypeScript', 'Next.js', 'Workflow'],
         color: 'var(--neon-cyan)',
         glow: 'rgba(0,255,241,0.3)',
-        // status: 'PUBLIC',
-        // stats: { stars: 1, forks: 1 }
     },
     {
         id: 3,
@@ -34,8 +30,6 @@ const projects = [
         tags: ['TypeScript', 'Algorithms', 'Education'],
         color: 'var(--neon-purple)',
         glow: 'rgba(191,95,255,0.3)',
-        // status: 'PUBLIC',
-        // stats: { stars: 1 }
     },
     {
         id: 4,
@@ -45,8 +39,6 @@ const projects = [
         tags: ['Python', 'Qt', 'Git', 'Filesystem'],
         color: 'var(--neon-yellow)',
         glow: 'rgba(255,230,0,0.3)',
-        // status: 'PUBLIC',
-        // stats: { stars: 1 }
     },
     {
         id: 5,
@@ -56,8 +48,6 @@ const projects = [
         tags: ['TypeScript', 'Education', 'Web Dev'],
         color: 'var(--neon-orange)',
         glow: 'rgba(255,107,53,0.3)',
-        status: 'PUBLIC',
-        // stats: { stars: 1 }
     },
     {
         id: 6,
@@ -67,7 +57,6 @@ const projects = [
         tags: ['Python', 'AI', 'Automation', 'DeepSeek'],
         color: 'var(--neon-pink)',
         glow: 'rgba(255,45,120,0.3)',
-        // status: 'PUBLIC',
     },
 ];
 
@@ -121,21 +110,6 @@ const Projects = () => (
                         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                     >
                         <div className="project-card__header">
-                            <div className="project-card__status-bar">
-                                <span className="project-card__status" style={{ color: p.color, borderColor: p.color + '50' }}>
-                                    {p.status}
-                                </span>
-                                {p.stats && (
-                                    <div className="project-card__stats">
-                                        {p.stats.stars && (
-                                            <span className="stat"><span className="stat-icon">★</span> {p.stats.stars}</span>
-                                        )}
-                                        {p.stats.forks && (
-                                            <span className="stat"><span className="stat-icon">⌥</span> {p.stats.forks}</span>
-                                        )}
-                                    </div>
-                                )}
-                            </div>
                             <h3 className="project-card__title" style={{ color: p.color }}>{p.title}</h3>
                             <p className="project-card__subtitle">{p.subtitle}</p>
                         </div>

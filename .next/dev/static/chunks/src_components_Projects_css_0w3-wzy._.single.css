@@ -51,42 +51,6 @@
   display: flex;
 }
 
-.project-card__status-bar {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: .2rem;
-  display: flex;
-}
-
-.project-card__status {
-  font-family: var(--font-mono);
-  letter-spacing: 2px;
-  background: #ffffff08;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: .2rem .6rem;
-  font-size: .55rem;
-}
-
-.project-card__stats {
-  font-family: var(--font-mono);
-  color: var(--text-muted);
-  gap: .8rem;
-  font-size: .65rem;
-  display: flex;
-}
-
-.stat {
-  align-items: center;
-  gap: .3rem;
-  display: flex;
-}
-
-.stat-icon {
-  opacity: .8;
-  font-size: .8rem;
-}
-
 .project-card__title {
   font-family: var(--font-heading);
   letter-spacing: 1px;
