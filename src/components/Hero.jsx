@@ -84,8 +84,7 @@ const Hero = () => {
                         />
                     </div>
                     <p className="hero__bio">
-                        19-year-old dev from the future, building today. I live where code meets creativity —
-                        from bare-metal C to beautiful React interfaces.
+                        19-year-old software developer, creating projects to make life easier.
                     </p>
                     <div className="hero__cta">
                         <a href="#projects" className="btn btn--primary">VIEW PROJECTS</a>
