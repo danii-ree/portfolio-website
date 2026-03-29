@@ -38,7 +38,7 @@ const About = () => (
                         low-level C programming where every byte matters and nothing is abstracted away.
                     </p>
                     <p>
-                        From there I fell in love with <span className="highlight-text">Linux</span> where I learned how operating systems tick, how
+                        From there I started using <span className="highlight-text">Linux</span> where I learned how operating systems work, how
                         processes work, and what it truly means to control your machine.
                     </p>
                     <p>
