@@ -35,7 +35,7 @@ const About = () => (
                     <p>
                         I'm a 19-year-old software developer with a deep passion for programming, computer
                         engineering, and physics. My journey started young — drawn to the raw elegance of
-                        low-level C programming where every byte matters and nothing is abstracted away.
+                        low-level C programming where I learned systems and computer architecture.
                     </p>
                     <p>
                         From there I started using <span className="highlight-text">Linux</span> where I learned how operating systems work, how
