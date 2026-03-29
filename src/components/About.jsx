@@ -38,14 +38,13 @@ const About = () => (
                         low-level C programming where every byte matters and nothing is abstracted away.
                     </p>
                     <p>
-                        From there I fell in love with <span className="highlight-text">Linux</span> —
-                        the OS for hackers and builders — where I learned how operating systems tick, how
+                        From there I fell in love with <span className="highlight-text">Linux</span> where I learned how operating systems tick, how
                         processes work, and what it truly means to control your machine.
                     </p>
                     <p>
                         Today I build full-stack applications, interactive web experiences, and
-                        <span className="highlight-text"> video games</span>. I believe great software
-                        is half science, half art — and I pursue both relentlessly.
+                        <span className="highlight-text"> simulation games</span>. I believe great software
+                        is half science, half creativity.
                     </p>
 
                     <div className="about__tags">
@@ -70,18 +69,20 @@ const About = () => (
                         {`{
   "name": "Daniel",
   "age": 19,
-  "location": "Earth",
+  "location": "Ontario, Canada",
   "stack": [
     "C", "Linux", "React",
     "Python", "JavaScript"
   ],
-  "loves": [
+  "interests": [
     "Game Development",
+    "Cyber Security",
+    "AI/ML",
     "Low-level Programming",
     "Physics Simulations",
     "Open Source"
   ],
-  "currently": "Building cool stuff",
+  "currently": "Building stuff",
   "available": true
 }`}
                     </pre>

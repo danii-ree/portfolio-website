@@ -4,14 +4,14 @@
 
 .skills .section-title {
     margin-top: 0.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .skills__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
 }
 
 .skill-group {
@@ -31,10 +31,6 @@
     margin-bottom: 0.4rem;
 }
 
-.skill-group__icon {
-    font-size: 1.3rem;
-}
-
 .skill-group__label {
     font-family: var(--font-heading);
     font-size: 0.85rem;
@@ -43,84 +39,27 @@
     text-transform: uppercase;
 }
 
-.skill-bar {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-}
-
-.skill-bar__meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.skill-bar__name {
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
-    color: var(--text-muted);
-}
-
-.skill-bar__pct {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    font-weight: 600;
-}
-
-.skill-bar__track {
-    width: 100%;
-    height: 6px;
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-.skill-bar__fill {
-    height: 100%;
-    border-radius: 3px;
-}
-
-/* Badges */
-.skills__badges {
-    text-align: center;
-}
-
-.skills__badges-label {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 3px;
-    color: var(--text-muted);
-    margin-bottom: 1.5rem;
-}
-
-.skills__badges-grid {
+.skill-group__tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
-    justify-content: center;
 }
 
-.badge {
+.skill-tag {
     font-family: var(--font-mono);
     font-size: 0.72rem;
     letter-spacing: 1.5px;
-    padding: 0.5rem 1.1rem;
+    padding: 0.5rem 1rem;
     border-radius: 6px;
-    border: 1px solid rgba(191, 95, 255, 0.35);
-    color: var(--neon-purple);
-    background: rgba(191, 95, 255, 0.06);
+    border: 1px solid;
+    background: rgba(255, 255, 255, 0.03);
     cursor: default;
-    transition: background 0.25s, box-shadow 0.25s;
-}
-
-.badge:hover {
-    background: rgba(191, 95, 255, 0.14);
-    box-shadow: 0 0 14px rgba(191, 95, 255, 0.25);
+    transition: all 0.25s ease;
 }
 
 @media (max-width: 900px) {
     .skills__grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

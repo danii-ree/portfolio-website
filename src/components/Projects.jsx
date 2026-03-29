@@ -6,69 +6,68 @@ import './Projects.css';
 const projects = [
     {
         id: 1,
-        title: 'Collaborative DAW',
-        subtitle: 'Digital Audio Workstation',
-        desc: 'A full-featured browser-based DAW with multi-track editing, waveform visualization, real-time collaboration via Supabase, and Google OAuth authentication.',
-        tags: ['React', 'Web Audio API', 'Supabase', 'OAuth'],
+        title: 'FilterStudio',
+        subtitle: 'Image Processing Laboratory',
+        desc: 'Advanced studio for building and testing custom image filters with real-time shader previews and visual effects.',
+        tags: ['TypeScript', 'WebGL', 'UI/UX'],
         color: 'var(--neon-pink)',
         glow: 'rgba(255,45,120,0.3)',
-        icon: '🎛️',
-        status: 'FEATURED',
+        status: 'PUBLIC',
+        stats: { stars: 2 }
     },
     {
         id: 2,
-        title: 'Qt DAW — Desktop Edition',
-        subtitle: 'Native C++ Music Production',
-        desc: 'A desktop-native music production application built in Qt6/C++ with a vintage 80s aesthetic, multi-track sequencer, audio recording, and playback engine.',
-        tags: ['C++', 'Qt6', 'Audio Engine', 'Linux'],
+        title: 'Altivity',
+        subtitle: 'Team Productivity Suite',
+        desc: 'Modern productivity platform built for high-performance teams, featuring real-time collaboration and tasks.',
+        tags: ['TypeScript', 'Next.js', 'Workflow'],
         color: 'var(--neon-cyan)',
         glow: 'rgba(0,255,241,0.3)',
-        icon: '🎹',
-        status: 'FEATURED',
+        status: 'PUBLIC',
+        stats: { stars: 1, forks: 1 }
     },
     {
         id: 3,
-        title: 'Binary Search Tree Lab',
-        subtitle: 'Data Structures in C',
-        desc: 'A complete BST implementation in C covering insertion, deletion, height calculation, and parent-finding helper algorithms — demonstrating deep understanding of recursive tree operations.',
-        tags: ['C', 'Algorithms', 'Data Structures'],
+        title: 'HackDSA',
+        subtitle: 'DSA Visualizer',
+        desc: 'An interactive Data Structures and Algorithms visualizer for first-year university students.',
+        tags: ['TypeScript', 'Algorithms', 'Education'],
         color: 'var(--neon-purple)',
         glow: 'rgba(191,95,255,0.3)',
-        icon: '🌳',
-        status: 'ACADEMIC',
+        status: 'PUBLIC',
+        stats: { stars: 1 }
     },
     {
         id: 4,
-        title: 'Insect Identifier AI',
-        subtitle: 'Computer Vision with Python',
-        desc: 'An AI-powered insect identification tool with confidence level visualization, real-time image classification, and a clean interface for nature enthusiasts and researchers.',
-        tags: ['Python', 'AI/ML', 'OpenCV', 'Computer Vision'],
+        title: 'QT-git-file-explorer',
+        subtitle: 'Developer Utilities',
+        desc: 'A file explorer made for developers who want ease of use in their git project.',
+        tags: ['Python', 'Qt', 'Git', 'Filesystem'],
         color: 'var(--neon-yellow)',
         glow: 'rgba(255,230,0,0.3)',
-        icon: '🐞',
-        status: 'AI/ML',
+        status: 'PUBLIC',
+        stats: { stars: 1 }
     },
     {
         id: 5,
-        title: 'Stack Data Structure',
-        subtitle: 'Embedded Systems in C++',
-        desc: 'A hardware Stack implementation in C++ with DS3231 RTC integration for timestamped operations — Push, Pop, IsEmpty, IsFull — running on microcontroller hardware.',
-        tags: ['C++', 'Embedded', 'Hardware', 'Arduino'],
+        title: 'scratchsslt-website',
+        subtitle: 'ESL Learning Platform',
+        desc: 'a website designed to help English learners to master OSSLT',
+        tags: ['TypeScript', 'Education', 'Web Dev'],
         color: 'var(--neon-orange)',
         glow: 'rgba(255,107,53,0.3)',
-        icon: '🔧',
-        status: 'EMBEDDED',
+        status: 'PUBLIC',
+        stats: { stars: 1 }
     },
     {
         id: 6,
-        title: 'Game Project',
-        subtitle: 'Coming Soon',
-        desc: 'An upcoming game development project combining physics simulation, procedural generation, and real-time rendering. Built with passion for interactive experiences.',
-        tags: ['Game Dev', 'Physics', 'C++', 'OpenGL'],
-        color: 'var(--neon-purple)',
-        glow: 'rgba(191,95,255,0.3)',
-        icon: '🎮',
-        status: 'IN PROGRESS',
+        title: 'Calendar-automation',
+        subtitle: 'AI-Powered Scheduler',
+        desc: 'A calendar automation program that automates study schedules using deep seek.',
+        tags: ['Python', 'AI', 'Automation', 'DeepSeek'],
+        color: 'var(--neon-pink)',
+        glow: 'rgba(255,45,120,0.3)',
+        status: 'PUBLIC',
     },
 ];
 
@@ -121,14 +120,25 @@ const Projects = () => (
                         whileHover={{ y: -8, scale: 1.01 }}
                         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                     >
-                        <div className="project-card__top">
-                            <div className="project-card__icon">{p.icon}</div>
-                            <span className="project-card__status" style={{ color: p.color, borderColor: p.color + '50' }}>
-                                {p.status}
-                            </span>
+                        <div className="project-card__header">
+                            <div className="project-card__status-bar">
+                                <span className="project-card__status" style={{ color: p.color, borderColor: p.color + '50' }}>
+                                    {p.status}
+                                </span>
+                                {p.stats && (
+                                    <div className="project-card__stats">
+                                        {p.stats.stars && (
+                                            <span className="stat"><span className="stat-icon">★</span> {p.stats.stars}</span>
+                                        )}
+                                        {p.stats.forks && (
+                                            <span className="stat"><span className="stat-icon">⌥</span> {p.stats.forks}</span>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                            <h3 className="project-card__title" style={{ color: p.color }}>{p.title}</h3>
+                            <p className="project-card__subtitle">{p.subtitle}</p>
                         </div>
-                        <h3 className="project-card__title" style={{ color: p.color }}>{p.title}</h3>
-                        <p className="project-card__subtitle">{p.subtitle}</p>
                         <p className="project-card__desc">{p.desc}</p>
                         <div className="project-card__tags">
                             {p.tags.map(t => (

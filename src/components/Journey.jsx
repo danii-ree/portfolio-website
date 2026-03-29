@@ -5,27 +5,24 @@ import './Journey.css';
 
 const milestones = [
     {
-        year: '2016',
+        year: '2019',
         title: 'The C Beginning',
-        icon: '⚡',
         color: 'var(--neon-yellow)',
         glow: '0 0 20px rgba(255,230,0,0.5)',
-        desc: 'Started my coding journey with C — the language of legends. Learned about memory management, pointers, and why computers do what they do at the bare metal level. Wrote my first programs on a Linux terminal and never looked back.',
+        desc: 'Started my coding journey with C. Learned about memory management, pointers, and why computers do what they do at the bare metal level. Wrote my first programs on a Linux terminal and never looked back.',
         tags: ['C', 'Memory', 'Algorithms', 'Terminal'],
     },
     {
-        year: '2018',
+        year: '2020',
         title: 'Falling for Linux',
-        icon: '🐧',
         color: 'var(--neon-cyan)',
         glow: '0 0 20px rgba(0,255,241,0.5)',
-        desc: 'Installed Linux for the first time and it changed everything. Learned bash scripting, system administration, file systems, and how the kernel orchestrates the hardware. Linux became my permanent home.',
+        desc: 'Installed Linux for the first time and it changed everything. Learned bash scripting, system administration, file systems, and how the kernel orchestrates the hardware. Linux became my permanent operating system.',
         tags: ['Linux', 'Bash', 'Kernel', 'Open Source'],
     },
     {
         year: '2021',
         title: 'Web & React Era',
-        icon: '⚛',
         color: 'var(--neon-pink)',
         glow: '0 0 20px rgba(255,45,120,0.5)',
         desc: 'Ventured into web development, then discovered React — and the world of component-based UI clicked instantly. Started building interactive UIs, APIs, and full-stack applications with real users.',
@@ -34,19 +31,17 @@ const milestones = [
     {
         year: '2023',
         title: 'Software Developer',
-        icon: '🚀',
         color: 'var(--neon-purple)',
         glow: '0 0 20px rgba(191,95,255,0.5)',
-        desc: 'Leveled up to full software development — building DAWs, game engines, web apps, and collaborative tools. Every project teaches me something new and pushes the boundaries of what I can create.',
+        desc: 'Building DAWs, simulation softwares, web apps, and collaborative tools.',
         tags: ['Full-Stack', 'Game Dev', 'DAW', 'Systems'],
     },
     {
         year: 'NOW',
         title: 'The Journey Continues',
-        icon: '∞',
         color: 'var(--neon-orange)',
         glow: '0 0 20px rgba(255,107,53,0.5)',
-        desc: 'Always learning, always building. Currently exploring physics simulations, generative systems, and next-gen web experiences. The best code I\'ve ever written is the code I haven\'t written yet.',
+        desc: 'Currently exploring physics simulations, generative systems, and next-gen web experiences.',
         tags: ['Physics', 'AI', 'Innovation', '∞'],
     },
 ];
@@ -76,20 +71,27 @@ const Journey = () => (
 
             <div className="timeline">
                 {milestones.map((m, i) => (
-                    <motion.div
-                        key={m.year}
-                        initial={{ opacity: 0, x: i % 2 === 0 ? -60 : 60 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, amount: 0.3 }}
-                        transition={{ duration: 0.7, delay: i * 0.1 }}
-                        className={`timeline__item ${i % 2 === 0 ? 'left' : 'right'}`}
-                    >
-                        <div className="timeline__connector">
+                    <div key={m.year} className={`timeline__item ${i % 2 === 0 ? 'left' : 'right'}`}>
+                        <motion.div 
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                            transition={{ duration: 0.6, delay: i * 0.1 }}
+                            className="timeline__connector"
+                        >
                             <div className="timeline__dot" style={{ background: m.color, boxShadow: m.glow }}>
                                 <span>{m.icon}</span>
                             </div>
-                        </div>
-                        <div className="timeline__card" style={{ borderColor: m.color + '40' }}>
+                        </motion.div>
+                        
+                        <motion.div
+                            initial={{ opacity: 0, x: i % 2 === 0 ? -40 : 40 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, amount: 0.4 }}
+                            transition={{ duration: 0.7, delay: i * 0.1 + 0.1, ease: 'easeOut' }}
+                            className="timeline__card"
+                            style={{ borderColor: m.color + '40' }}
+                        >
                             <div className="timeline__year" style={{ color: m.color, textShadow: m.glow }}>{m.year}</div>
                             <h3 className="timeline__title">{m.title}</h3>
                             <p className="timeline__desc">{m.desc}</p>
@@ -98,8 +100,8 @@ const Journey = () => (
                                     <span key={t} className="tag tag--sm" style={{ borderColor: m.color + '60', color: m.color }}>{t}</span>
                                 ))}
                             </div>
-                        </div>
-                    </motion.div>
+                        </motion.div>
+                    </div>
                 ))}
             </div>
         </div>
