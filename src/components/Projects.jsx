@@ -12,8 +12,8 @@ const projects = [
         tags: ['TypeScript', 'WebGL', 'UI/UX'],
         color: 'var(--neon-pink)',
         glow: 'rgba(255,45,120,0.3)',
-        status: 'PUBLIC',
-        stats: { stars: 2 }
+        // status: 'PUBLIC',
+        // stats: { stars: 2 }
     },
     {
         id: 2,
@@ -23,8 +23,8 @@ const projects = [
         tags: ['TypeScript', 'Next.js', 'Workflow'],
         color: 'var(--neon-cyan)',
         glow: 'rgba(0,255,241,0.3)',
-        status: 'PUBLIC',
-        stats: { stars: 1, forks: 1 }
+        // status: 'PUBLIC',
+        // stats: { stars: 1, forks: 1 }
     },
     {
         id: 3,
@@ -34,8 +34,8 @@ const projects = [
         tags: ['TypeScript', 'Algorithms', 'Education'],
         color: 'var(--neon-purple)',
         glow: 'rgba(191,95,255,0.3)',
-        status: 'PUBLIC',
-        stats: { stars: 1 }
+        // status: 'PUBLIC',
+        // stats: { stars: 1 }
     },
     {
         id: 4,
@@ -45,8 +45,8 @@ const projects = [
         tags: ['Python', 'Qt', 'Git', 'Filesystem'],
         color: 'var(--neon-yellow)',
         glow: 'rgba(255,230,0,0.3)',
-        status: 'PUBLIC',
-        stats: { stars: 1 }
+        // status: 'PUBLIC',
+        // stats: { stars: 1 }
     },
     {
         id: 5,
@@ -57,7 +57,7 @@ const projects = [
         color: 'var(--neon-orange)',
         glow: 'rgba(255,107,53,0.3)',
         status: 'PUBLIC',
-        stats: { stars: 1 }
+        // stats: { stars: 1 }
     },
     {
         id: 6,
@@ -67,7 +67,7 @@ const projects = [
         tags: ['Python', 'AI', 'Automation', 'DeepSeek'],
         color: 'var(--neon-pink)',
         glow: 'rgba(255,45,120,0.3)',
-        status: 'PUBLIC',
+        // status: 'PUBLIC',
     },
 ];
 
